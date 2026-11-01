@@ -1,0 +1,18 @@
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.hero-tubes{animation:floaty 4s ease-in-out infinite}
+@media(max-width:520px){
+  .app-shell{padding:15px 16px 22px}
+  .header-stats{gap:4px}.stat-chip{padding:0 6px;font-size:10px}.stat-chip svg{width:13px}
+  .game-board{grid-template-columns:repeat(4,minmax(48px,1fr));gap:22px 7px}
+  .board-wrap{min-height:clamp(350px,48vh,450px)}
+  .tube{height:clamp(145px,20vh,174px);width:clamp(46px,11vw,59px)}
+  .controls{gap:5px}.control-button{height:61px;border-radius:14px}
+  .level-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+  .level-tile{height:69px}
+}
+@media(min-width:650px){
+  .game-board{grid-template-columns:repeat(6,minmax(52px,1fr));gap:30px 18px}
+  .board-wrap{min-height:460px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
