@@ -34,5 +34,4 @@ desktop.ini
 .vite/
 
 #packages
-package-lock.json
-package.json
+.json
